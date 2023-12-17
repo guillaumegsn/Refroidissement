@@ -1,0 +1,230 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Temperature:DS18S20Z U?
+U 1 1 64186E23
+P 3950 4500
+F 0 "U?" H 3607 4546 50  0000 R CNN
+F 1 "DS18S20Z" H 3607 4455 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2950 4250 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" H 3800 4750 50  0001 C CNN
+	1    3950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64187A9C
+P 3950 4800
+F 0 "#PWR?" H 3950 4550 50  0001 C CNN
+F 1 "GND" H 3955 4627 50  0000 C CNN
+F 2 "" H 3950 4800 50  0001 C CNN
+F 3 "" H 3950 4800 50  0001 C CNN
+	1    3950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 641882CC
+P 3950 3950
+F 0 "R?" H 4020 3996 50  0000 L CNN
+F 1 "R" H 4020 3905 50  0000 L CNN
+F 2 "" V 3880 3950 50  0001 C CNN
+F 3 "~" H 3950 3950 50  0001 C CNN
+	1    3950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 64188944
+P 4750 3350
+F 0 "#PWR?" H 4750 3200 50  0001 C CNN
+F 1 "+5V" H 4765 3523 50  0000 C CNN
+F 2 "" H 4750 3350 50  0001 C CNN
+F 3 "" H 4750 3350 50  0001 C CNN
+	1    4750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4100 3950 4200
+Wire Wire Line
+	4250 4500 4600 4500
+Wire Wire Line
+	4600 4700 4500 4700
+Wire Wire Line
+	4500 4700 4500 4750
+$Comp
+L Device:R R?
+U 1 1 6418BEE2
+P 4500 4900
+F 0 "R?" H 4570 4946 50  0000 L CNN
+F 1 "R" H 4570 4855 50  0000 L CNN
+F 2 "" V 4430 4900 50  0001 C CNN
+F 3 "~" H 4500 4900 50  0001 C CNN
+	1    4500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6418DC0C
+P 4500 5100
+F 0 "#PWR?" H 4500 4850 50  0001 C CNN
+F 1 "GND" H 4505 4927 50  0000 C CNN
+F 2 "" H 4500 5100 50  0001 C CNN
+F 3 "" H 4500 5100 50  0001 C CNN
+	1    4500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5050 4500 5100
+Wire Wire Line
+	4500 4700 4500 4050
+Wire Wire Line
+	4500 4050 4750 4050
+Connection ~ 4500 4700
+$Comp
+L Device:R R?
+U 1 1 6418E840
+P 4900 4050
+F 0 "R?" V 4693 4050 50  0000 C CNN
+F 1 "R" V 4784 4050 50  0000 C CNN
+F 2 "" V 4830 4050 50  0001 C CNN
+F 3 "~" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 4050 5350 4050
+Wire Wire Line
+	5350 4600 5200 4600
+Connection ~ 5350 4600
+$Comp
+L Amplifier_Operational:TL082 U1
+U 1 1 641890C7
+P 4900 4600
+F 0 "U1" H 4900 4967 50  0000 C CNN
+F 1 "TL082" H 4900 4876 50  0000 C CNN
+F 2 "" H 4900 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4900 4600 50  0001 C CNN
+	1    4900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 1 1 6419D88D
+P 6700 3750
+F 0 "U?" H 6700 4117 50  0000 C CNN
+F 1 "TL082" H 6700 4026 50  0000 C CNN
+F 2 "" H 6700 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 641A3019
+P 6000 3850
+F 0 "R?" V 5793 3850 50  0000 C CNN
+F 1 "R" V 5884 3850 50  0000 C CNN
+F 2 "" V 5930 3850 50  0001 C CNN
+F 3 "~" H 6000 3850 50  0001 C CNN
+	1    6000 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 3850 6250 3850
+Wire Wire Line
+	5850 3850 5550 3850
+Wire Wire Line
+	3950 3600 3950 3800
+Wire Wire Line
+	6250 3850 6250 4050
+Wire Wire Line
+	6250 4050 6500 4050
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 6400 3850
+$Comp
+L Device:R R?
+U 1 1 641A804B
+P 6650 4050
+F 0 "R?" V 6443 4050 50  0000 C CNN
+F 1 "R" V 6534 4050 50  0000 C CNN
+F 2 "" V 6580 4050 50  0001 C CNN
+F 3 "~" H 6650 4050 50  0001 C CNN
+	1    6650 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3750 7050 3750
+Wire Wire Line
+	7050 4050 6800 4050
+Wire Wire Line
+	7050 3750 7050 4050
+Wire Wire Line
+	6400 3650 6300 3650
+Wire Wire Line
+	6300 3650 6300 4100
+$Comp
+L power:GND #PWR?
+U 1 1 641A9B53
+P 6300 4200
+F 0 "#PWR?" H 6300 3950 50  0001 C CNN
+F 1 "GND" H 6305 4027 50  0000 C CNN
+F 2 "" H 6300 4200 50  0001 C CNN
+F 3 "" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3350 4750 3600
+Wire Wire Line
+	4750 3600 3950 3600
+$Comp
+L Device:R_POT RV?
+U 1 1 641BD906
+P 5400 3850
+F 0 "RV?" H 5331 3896 50  0000 R CNN
+F 1 "R_POT" H 5331 3805 50  0000 R CNN
+F 2 "" H 5400 3850 50  0001 C CNN
+F 3 "~" H 5400 3850 50  0001 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 4200
+Wire Wire Line
+	6300 4200 6300 4250
+Wire Wire Line
+	5350 4600 5350 4700
+Connection ~ 4750 3600
+Wire Wire Line
+	5400 3600 5400 3700
+Wire Wire Line
+	4750 3600 5400 3600
+Wire Wire Line
+	5400 4000 5400 4100
+Wire Wire Line
+	5400 4100 6300 4100
+Connection ~ 6300 4100
+Wire Wire Line
+	6300 4100 6300 4200
+Wire Wire Line
+	5350 4050 5350 4600
+Wire Wire Line
+	5350 4600 7050 4600
+Wire Wire Line
+	7050 4050 7050 4600
+Connection ~ 7050 4050
+$EndSCHEMATC
